@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reasons I Love You</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="start-screen" class="centered">
+    <h1>For the one I love...</h1>
+    <button onclick="start()">Click to Begin</button>
+  </div>
+
+    <div id="main-content" class="hidden centered">
+      <img id="reason-image" src="" class="hidden" alt="Reason image" />
+      <h2 id="reason-text"></h2>
+      <button id="next-button" onclick="showReason()">Show Me a Reason</button>
+      <button id="back-button" onclick="showPreviousReason()">Back</button>
+    </div>
+    
+   
+
+  <script src="script.js"></script>
+  <div id="final-screen" class="hidden centered">
+    <h2 id="final-message"></h2>
+    <button id="restart-button" onclick="restart()">Start Over</button>
+
+  </div>
+  
+  <audio id="bg-music" autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  
+</body>
+</html>
